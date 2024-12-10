@@ -2,14 +2,13 @@
 /* Grunnstilling */
 * {
     margin: 0;
-    padding: 40;
+    /*padding: 40;*/
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: 'Rokkitt', serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     line-height: 1.5;
     background-image: linear-gradient(to bottom, rgb(73, 24, 22), rgb(49, 10, 0));    
@@ -48,6 +47,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 nav ul li {
@@ -68,11 +68,9 @@ nav ul li a:hover {
 /* Sektion */
 .section {
     background-color: white;
-    padding: 40px 0;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
 }
 
 .section:nth-child(odd) {
@@ -135,6 +133,7 @@ nav ul li a:hover {
 }
 
 .team-card {
+
     background-color: #fff;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -203,9 +202,7 @@ footer {
         width: 90%;
     }
 */
-    nav ul {
-        flex-direction: column;
-    }
+
 /*
     .driver-list, .team-list {
         flex-direction: column;
@@ -248,7 +245,7 @@ footer {
         color: rgb(255, 166, 65);
     }
     a:visited {
-        columns: rgb(221, 45, 1);
+        color: rgb(221, 45, 1);
     }
     a:hover, a:active {
         columns: #000;
@@ -342,6 +339,12 @@ footer {
         .col-4 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        nav ul {
+            flex-direction: row;
+        }
+        .container a:link {
+            border:0;
         }
     }
     @media screen and (min-width:80em) {
